@@ -1,5 +1,19 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <a-button  @click="getJson" type="primary">获取json</a-button>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    json() {
+      return this.data;
+    }
+  },
+  methods: {
+    getJson() {
+
+    }
+  },
+}
+</script>
